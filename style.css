@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+#calculatorBody {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    border: 18px solid #222222;
+    border-radius: 10px;
+}
+
+#resultPanel {
+    background: black;
+    font-size: 93px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 29px;
+    padding-right: 13px;
+    color: white;
+}
+
+#buttonsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: repeat(5, 90px);
+    row-gap: 12px;
+    column-gap: 10px;
+    padding: 10px;
+}
+#zeroButton {
+    grid-column: span 2;
+}
+
+button {
+    font-size: 2em;
+    border-radius: 50px;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    padding: 44px;
+    justify-content: center;
+}
+
+.specialButtons {
+    background: lightgrey;
+}
+.specialButtons:hover {
+    background: #939393;
+}
+
+.operatorButtons {
+    background: darkorange;
+    color: white;
+}
+.operatorButtons:hover {
+    background: #c46d05;
+}
+#equalsButton {
+    background: darkorange;
+    color: white;
+}
+#equalsButton:hover {
+    background: #c46d05;
+}
+
+.numberButtons {
+    background: #3a3a3a;
+    color: white;
+}
+.numberButtons:hover {
+    background: #252525;
+}
+
+#zeroButton {
+    justify-content: flex-start;
+    padding-left: 37px;
+}
